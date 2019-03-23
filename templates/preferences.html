@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="{{ url_for('static', filename='styles/style.css') }}" type="text/css" rel="stylesheet">
+        </head>
+
+        <body>
+            <form method="POST" action="/preferences">
+                <section class="year-selection">
+                    <label>
+                        Select the oldest year you would like the movies to be:
+                    </label>
+                    <select id = "years" name="years" method="GET" action="/preferences">
+                        {% for year in years %}
+                            <option value= "{{year}}" SELECTED>{{ year }}</option>
+                        {% endfor %}
+                    </select>
+                </section>
+
+                <section class="genre-selection">
+                    <label>
+                        Select the genre you prefer:
+                    </label>
+                    <select id = "genres" name="genres" method="GET" action="/preferences">
+                        {% for genre in genres %}
+                            <option value= "{{genre}}" SELECTED>{{ genre }}</option>
+                        {% endfor %}
+                    </select>
+                </section>
+
+                <section class="metascore-selection">
+                    <label>
+                        Select the metascore preference you would like:
+                    </label>
+                    <select id="metascores" name="metascores" method="GET" action="/preferences">
+                        {% for score in metascores %}
+                            <option value= "{{score}}" SELECTED>{{ score }}</option>
+                        {% endfor %}
+                    </select>
+                    <input class="btn btn-primary" type ="submit" value="Check">
+                </section>
+            </form>
+        </body>
+    </html>

@@ -1,0 +1,182 @@
+/*Browser often caches css file data, remeber to properly refresh by pressing CTRL + SHIFT + R*/
+body {
+    background: linear-gradient(90deg, #42275a, #734b6d);
+    margin: 0;
+    padding: 0;
+}
+
+h1.movie {
+    color: #FFF;
+    font-size: 2em;
+    font-family: "Palatino";
+    text-align: center;
+    padding-top: 35px;
+    width: 100%;
+    border-top: 4px dotted rgb(255, 247, 0);
+}
+
+h2 {
+    color: rgb(179, 241, 234);
+    font-size: 2em;
+    font-family: "Courier";
+    text-align: right;
+    padding-right: 20px; 
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+img {
+    position: relative;
+    left: 695px;
+    top: 45px;
+    padding-bottom: 65px;
+}
+
+.year-selection {
+    position: relative;
+  
+    width: 760px;
+    height: 200px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.genre-selection {
+    position: relative;
+  
+    width: 760px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.metascore-selection{
+    position: relative;
+  
+    width: 760px;
+    margin: 0 auto;
+}
+
+input {
+    position: absolute;
+    top: 125px;
+    left: 275px;
+    background: rgb(165, 39, 39);
+    border-radius: 25px;
+    width: 100px;
+    height: 67px;
+    font-family: "Arial Black";
+    font-size: 17px;
+    border: none;
+    color: white;
+}
+
+#years {
+    background: rgb(34, 25, 71);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#genres {
+    background: rgb(34, 25, 71);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#metascores {
+    background: rgb(34, 25, 71);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.back {
+    position: absolute;
+    background: rgb(165, 39, 39);
+    border-radius: 25px;
+    width: 90px;
+    height: 50px;
+    top: 38px;
+    left: 22px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.button {
+    position: absolute;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(179, 83, 235);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 275px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    left: 720px;
+    top: 630px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#poster {
+    position: relative;
+    left: 757px;
+    top: 35px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #001f3f;
+    background: rgb(34, 25, 71);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+#slogan {
+    position: absolute;
+    top: 60px;
+    left: 630px;
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(110, 107, 107);
+}

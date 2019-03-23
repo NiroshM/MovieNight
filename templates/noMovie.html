@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='styles/style.css') }}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form action='preferences'>
+            <button type="submit" class="back" style="vertical-align: middle" href=><span>&#8249;&#8249; Go Back</span></button>
+        </form>
+        <div class="no_movie">
+            <h1 class="movie">
+                Sorry, there are no movies to your specifications. <br />
+                Please go back and adjust your preferences.
+            </h1>
+            <img src="/static/popcorn.png">
+        </div>
+    </body>
+</html>

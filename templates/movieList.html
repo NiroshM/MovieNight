@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='styles/style.css') }}" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <form action='preferences'>
+            <button type="submit" class="back" style="vertical-align: middle" href=><span>&#8249;&#8249; Go Back</span></button>
+        </form>
+        {% for movie_option, poster, metascore in item_list %}
+            <h1 class="movie">{{ movie_option }}</h1>
+            <img src={{poster}} style="width:150px;height:180px;" id="poster">
+            <h2>Metascore: {{ metascore }}</h2>
+        {% endfor %}
+    </body>
+</html>
+

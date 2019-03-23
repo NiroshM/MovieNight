@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <link href="{{ url_for('static', filename='styles/style.css') }}" type="text/css" rel="stylesheet">
+
+            <style type="text/css">
+	            * { margin: 0; padding: 0; }
+	
+	            body { background: #eee; }
+	            #container {
+		            width: 800px; height: 380px; margin: 50px auto; padding: 65px 0 0 0; text-align: center;
+		            background: url(main-bg.jpg) 0 0 no-repeat;
+	            }
+	
+	            h1 {
+		            display: inline;
+		            position: relative;
+		            font: 200px Helvetica, Sans-Serif;
+		            letter-spacing: -5px;
+		            color: rgba(0,0,255,0.5); 
+	            }
+	
+	            h1:after {
+		            content: "Movie Night";
+		            position: absolute; left: 10px; top: 5px;
+		            color: rgba(255,0,0,0.5);   
+	            }
+            </style>
+
+        </head>
+
+        <body>
+			<div id="slogan">
+				<h3>Find the perfect movie for tonight</h3> 
+			</div>
+
+	        <div id="container">
+		        <h1>Movie Night</h1>
+            </div>
+            <form action='preferences'>
+                <button type="submit" class="button" style="vertical-align: middle" href=><span>Find a Movie</span></button>
+            </form>
+        </body> 
+    </html>
